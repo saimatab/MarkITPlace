@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="smokeTest.ValidateSmokeTest">
+        <methods>
+          <include name="ValidateCheckoutHeaderLogo"/>
+          <include name="ValidateRemoveFromCart"/>
+          <include name="ValidateCheckoutProcess"/>
+          <include name="ValidateSavedReports"/>
+          <include name="ValidateCompaePage"/>
+          <include name="closebrowser"/>
+          <include name="ValidateAllReportsLinks"/>
+          <include name="ValidateAddToCart"/>
+          <include name="ValidateCalendarLinks"/>
+        </methods>
+      </class> <!-- smokeTest.ValidateSmokeTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
