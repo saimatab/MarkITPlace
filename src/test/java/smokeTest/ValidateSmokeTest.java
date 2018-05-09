@@ -27,7 +27,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import jdk.incubator.http.internal.common.Log;
+
 import pageObjects.AllProducts;
 import pageObjects.Calendar;
 import pageObjects.CartPage;

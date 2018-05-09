@@ -5,34 +5,13 @@
     <classes>
       <class name="smokeTest.ValidateSmokeTest">
         <methods>
-          <include name="ValidateCartPage"/>
-          <include name="closebrowser"/>
-          <include name="ValidateAllReportsLinks"/>
-          <include name="ValidateAddToCart"/>
-          <include name="ValidatePurchaseAnalysisPage"/>
-          <include name="ValidateStandardsCatalogDetail"/>
-          <include name="ValidateCheckoutHeaderLogo"/>
-          <include name="ValidatePAEmail"/>
-          <include name="ValidateTrackpage"/>
-          <include name="ValidateCalendarPage"/>
-          <include name="ValidateCheckoutProcess"/>
-          <include name="ValidateMyProfNavigation"/>
-          <include name="ValidateSavedReports"/>
-          <include name="ValidateRecentViewLink"/>
-          <include name="ValidateHeaderLogo"/>
-          <include name="ValidateResources"/>
-          <include name="ValidateSearching"/>
-          <include name="ValidateordersPage"/>
-          <include name="ValidateFooterLinks"/>
           <include name="ValidateSpecialOffer"/>
-          <include name="ValidateAudioCablesCategory"/>
-          <include name="ValidateCalendarLinks"/>
-          <include name="ValidatePDP"/>
-          <include name="ValidateStandardsCatalog"/>
+          <include name="ValidateCartPage"/>
           <include name="ValidateAllProduct"/>
-          <include name="ValidateCheckoutFooterLogo"/>
-          <include name="ValidateCompaePage"/>
-          <include name="ValidateFooterLogo"/>
+          <include name="ValidateAudioCablesCategory"/>
+          <include name="closebrowser"/>
+          <include name="ValidateResources"/>
+          <include name="ValidateStandardsCatalogDetail"/>
         </methods>
       </class> <!-- smokeTest.ValidateSmokeTest -->
     </classes>
