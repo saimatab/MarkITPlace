@@ -93,6 +93,8 @@ public class ValidateSmokeTest extends base {
 		}
 		Assert.assertEquals(title, favoritesTitle);
 		Thread.sleep(10000);
+		
+		/*10-5-18
 		FavouritePage FP = new FavouritePage(driver);
 		//wt.until(ExpectedConditions.elementToBeClickable(FP.getSelectall()));
 		try {
@@ -122,7 +124,7 @@ public class ValidateSmokeTest extends base {
 			Log.error("Favorite page not Open");
 			Log.error(e.getMessage());
 		}
-		
+	10-5-18*/
 		
 		}
 
@@ -162,11 +164,14 @@ public class ValidateSmokeTest extends base {
 
 	public void ValidateAddToCart() throws InterruptedException {
 		SearchResultPage Srp = new SearchResultPage(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 50);
 		// --wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='add_to_cart_10886231']"))));
 		wait.until(ExpectedConditions.visibilityOf(Srp.getProduct1Cart()));
 		Srp.getProduct1Cart().click();
 		Log.info("User has clicked on Add to Cart on First Searched Product");
+	
+		
+		
 		// driver.findElement(By.xpath("//button[@title='Close (Esc)']")).click();
 		String parentWindowHandler = driver.getWindowHandle(); // Store your parent
 		// window
@@ -233,10 +238,12 @@ Srp.getProduct4Cart().click();
 		// driver.findElement(By.className("mfp-close")).click();
 		// actions.moveToElement(driver.findElement(By.xpath("//*[@id='cart-dialog']/div[1]/div[1]/div/div/div/button")));
 		// driver.findElement(By.xpath("//button[@title='Close (Esc)']"));
+		
+		
 	}
 
 
-	@Test(priority = 4,enabled=false)
+	@Test(priority = 4,enabled = false)
 
 	public void ValidateAddTofavorites() throws InterruptedException {
 		SearchResultPage Srp = new SearchResultPage(driver);
@@ -244,11 +251,9 @@ Srp.getProduct4Cart().click();
 		// System.out.println(driver.findElement(By.xpath("//*[@id='products-content']/div/div[2]/div/div/div[1]/h4")).isEnabled());
 		// Srp.getFav1Product().click();
 		driver.findElement(By.xpath("//*[@id='fav_btn_10886231']")).click();
+		Thread.sleep(10000);
 		Log.info("User has clicked on Add to Favorites on First Searched Product");
-		
 		// Log.info("user has clicked add to favorites button");
-		/*3may2018
-		
 		try {
 			Assert.assertEquals(Srp.getFavdialog().isEnabled(), true);
 			// System.out.println(driver.findElement(By.xpath("//*[@id='products-content']/div/div[2]/div/div/div[1]/h4")).isEnabled());
@@ -279,19 +284,16 @@ Srp.getProduct4Cart().click();
 		// Thread.sleep(5000);
 		// } catch (Throwable e) {
 		// }
-		// 
-		 * 
-		 3may2018* Thread.sleep(5000);
-		 */
+		// Thread.sleep(5000);
 	}
 
 	
 	@Test(priority = 5)
 
 	public void ValidatePDP() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		Srp = new SearchResultPage(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 5000);
+		WebDriverWait wait = new WebDriverWait(driver, 50);
 		// --wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='add_to_cart_10886231']"))));
 		wait.until(ExpectedConditions.visibilityOf(Srp.getProduct1Name()));
 
@@ -452,12 +454,16 @@ Srp.getProduct4Cart().click();
 			Log.error(e.getMessage());
 		}
 		Assert.assertEquals(title, exp);
+		
+		/*10-may-2018	
 		wt.until(ExpectedConditions.elementToBeClickable(St.getAdd2cartbtn()));
 		St.getAdd2cartbtn().click();
-		wt.until(ExpectedConditions.elementToBeClickable(St.getCloseicon()));
+	Thread.sleep(10000);
+	
+	wt.until(ExpectedConditions.elementToBeClickable(St.getCloseicon()));
 		St.getCloseicon().click();
+	10-may-2018*/
 		Thread.sleep(3000);
-		
 		
 	}
 
@@ -583,7 +589,7 @@ Srp.getProduct4Cart().click();
 
 	@Test(priority = 18)
 	public void ValidateCheckoutProcess() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, 50);
+		WebDriverWait wait = new WebDriverWait(driver, 5000);
 		Random random = new Random();
 		int x = random.nextInt(90000) + 100;
 		CartPage CP = new CartPage(driver);
@@ -594,18 +600,20 @@ Srp.getProduct4Cart().click();
 		Thread.sleep(10000);
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getPO()));
 		CO.getPO().sendKeys((String.valueOf(x)));
-		//wait.until(ExpectedConditions.elementToBeClickable(CO.getBillingDropdown()));
-		//CO.getBillingDropdown().click();
 		
-		//wait.until(ExpectedConditions.elementToBeClickable(CO.getListvalue()));
-		//CO.getListvalue().click();
+		/*
+		wait.until(ExpectedConditions.elementToBeClickable(CO.getBillingDropdown()));
+		CO.getBillingDropdown().click();
 		
-		//Thread.sleep(5000);
-	
+		wait.until(ExpectedConditions.elementToBeClickable(CO.getListvalue()));
+		CO.getListvalue().click();
+		
+		Thread.sleep(5000);
+	*/
 		
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getSaveBtn1()));
 		CO.getSaveBtn1().click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 		
 		//wait.until(ExpectedConditions.elementToBeClickable(CO.getListvalue()));
 		//CO.getListvalue().click();
@@ -621,7 +629,7 @@ Srp.getProduct4Cart().click();
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getSaveBtn1()));
 
 		CO.getSaveBtn1().click();
-		Thread.sleep(10000);
+		Thread.sleep(9000);
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getEmailConfirm()));
 		CO.getEmailConfirm().clear();
 		CO.getEmailConfirm().sendKeys("faizan.mamji@arpatech.com");
