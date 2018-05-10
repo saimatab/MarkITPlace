@@ -7,11 +7,18 @@
         <methods>
           <include name="ValidateSpecialOffer"/>
           <include name="ValidateCartPage"/>
-          <include name="ValidateAllProduct"/>
           <include name="ValidateAudioCablesCategory"/>
           <include name="closebrowser"/>
-          <include name="ValidateResources"/>
+          <include name="ValidateAddToCart"/>
+          <include name="ValidatePDP"/>
           <include name="ValidateStandardsCatalogDetail"/>
+          <include name="ValidateStandardsCatalog"/>
+          <include name="ValidateAllProduct"/>
+          <include name="ValidateMyProfNavigation"/>
+          <include name="ValidateRecentViewLink"/>
+          <include name="ValidateHeaderLogo"/>
+          <include name="ValidateResources"/>
+          <include name="ValidateFooterLogo"/>
         </methods>
       </class> <!-- smokeTest.ValidateSmokeTest -->
     </classes>

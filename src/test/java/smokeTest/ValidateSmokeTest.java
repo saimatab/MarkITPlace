@@ -128,10 +128,11 @@ public class ValidateSmokeTest extends base {
 
 	@Test(priority = 2)
 
-	public void ValidateSearching() {
+	public void ValidateSearching() throws InterruptedException {
 		HomePage hp = new HomePage(driver);
 		hp.getsearchbox().sendKeys("printers" + Keys.ENTER);
 		Log.info("user is searching printer using the search textbox");
+		Thread.sleep(20000);
 		String title3 = driver.getTitle();
 		try {
 			Assert.assertEquals(title3, "Printers - MarkITplace");
