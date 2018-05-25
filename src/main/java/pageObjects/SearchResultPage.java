@@ -12,6 +12,7 @@ public class SearchResultPage {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;
 	}
+	By Product5Cart= By.xpath("(//a[@data-product-type='PRODUCT'])[3]");
 	By Compare1 = By.xpath("(//div[@class='control__indicator'])[1]");
 	By Compare2 = By.xpath("(//div[@class='control__indicator'])[2]");
 	By CompareBtn=By.linkText("Compare");
@@ -104,6 +105,9 @@ public class SearchResultPage {
 	{
 		return driver.findElement(prod1name);
 	}
-	
+	public WebElement getProduct5Cart()
+	{
+		return driver.findElement(Product5Cart);
+	}
 
 }

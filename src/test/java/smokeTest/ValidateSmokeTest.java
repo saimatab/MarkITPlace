@@ -37,6 +37,7 @@ import pageObjects.Footer;
 import pageObjects.Header;
 import pageObjects.HomePage;
 import pageObjects.MyProfilePage;
+import pageObjects.PDP;
 import pageObjects.PurchaseAnalysis;
 import pageObjects.SearchResultPage;
 import pageObjects.StandardsCatalog;
@@ -130,11 +131,10 @@ public class ValidateSmokeTest extends base {
 
 	@Test(priority = 2)
 
-	public void ValidateSearching() throws InterruptedException {
+	public void ValidateSearching() {
 		HomePage hp = new HomePage(driver);
 		hp.getsearchbox().sendKeys("printers" + Keys.ENTER);
 		Log.info("user is searching printer using the search textbox");
-		Thread.sleep(20000);
 		String title3 = driver.getTitle();
 		try {
 			Assert.assertEquals(title3, "Printers - MarkITplace");
@@ -160,15 +160,19 @@ public class ValidateSmokeTest extends base {
 		Assert.assertEquals(Srp.getAllProducts().isDisplayed(), true);
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3,enabled=false)
 
 	public void ValidateAddToCart() throws InterruptedException {
 		SearchResultPage Srp = new SearchResultPage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, 50);
 		// --wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='add_to_cart_10886231']"))));
-		wait.until(ExpectedConditions.visibilityOf(Srp.getProduct1Cart()));
-		Srp.getProduct1Cart().click();
-		Log.info("User has clicked on Add to Cart on First Searched Product");
+		//wait.until(ExpectedConditions.visibilityOf(Srp.getProduct1Cart()));
+		//Srp.getProduct1Cart().click();
+		
+		wait.until(ExpectedConditions.visibilityOf(Srp.getProduct5Cart()));
+		Srp.getProduct5Cart().click();
+		
+		Log.info("User has clicked on Add to Cart on Third Searched Product");
 	
 		
 		
@@ -290,15 +294,15 @@ Srp.getProduct4Cart().click();
 	
 	@Test(priority = 5)
 
-	public void ValidatePDP() throws InterruptedException {
+	public void ValidatePDPandAddToCart() throws InterruptedException {
 		Thread.sleep(5000);
 		Srp = new SearchResultPage(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 50);
+		WebDriverWait wait = new WebDriverWait(driver, 100);
 		// --wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id='add_to_cart_10886231']"))));
 		wait.until(ExpectedConditions.visibilityOf(Srp.getProduct1Name()));
 
 		Srp.getProduct1Name().click();
-		driver.manage().timeouts().pageLoadTimeout(1000, TimeUnit.SECONDS);
+		//driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		String expected1 = "HP Officejet Pro 8710 All-in-One - Multifunction printer - MarkITplace";
 		String title5 = driver.getTitle();
 
@@ -312,15 +316,22 @@ Srp.getProduct4Cart().click();
 			Log.error(e.getMessage());
 		}
 		Assert.assertEquals(title5, expected1);
+		PDP pp = new PDP(driver);
+		wait.until(ExpectedConditions.visibilityOf(pp.getCartbtn()));
+		pp.getCartbtn().click();
+		wait.until(ExpectedConditions.visibilityOf(pp.getCartClose()));
+		pp.getCartClose().click();
+		Thread.sleep(5000);
 
 	}
 
 	
 
 	@Test(priority = 6)
-	public void ValidateRecentViewLink() {
+	public void ValidateRecentViewLink() throws InterruptedException {
 		FavouritePage fav = new FavouritePage(driver);
 		fav.getRecentlyViewed().click();
+		Thread.sleep(10000);
 		String Title8 = driver.getTitle();
 		String expectedtitle8 = "Recently Viewed Products - MarkITplace";
 		try {
@@ -657,7 +668,6 @@ Srp.getProduct4Cart().click();
 			Log.error("User have not reached the order confirmation page");
 			Log.error(e.getMessage());
 		}
-		Thread.sleep(10000);
 		Assert.assertEquals(title5, "Order Confirmation - MarkITplace");
 		
 		Thread.sleep(5000);
@@ -719,12 +729,13 @@ Srp.getProduct4Cart().click();
 
 	@Test(priority = 21)
 
-	public void ValidateFooterLinks() {
+	public void ValidateFooterLinks() throws InterruptedException {
 		Footer ft = new Footer(driver);
 		ft.getFStandCatalog().click();
 		Log.info("User has clicked on the Standard Catalog Link from the footer of the page");
 		String title1 = driver.getTitle();
 		String exp1 = "Standard Products - MarkITplace";
+		Thread.sleep(10000);
 		try {
 			Assert.assertEquals(title1, exp1);
 
@@ -742,6 +753,7 @@ Srp.getProduct4Cart().click();
 		Log.info("User has clicked on the All product Link from the footer of the page");
 		String title2 = driver.getTitle();
 		String exp2 = "All Products - MarkITplace";
+		Thread.sleep(10000);
 		try {
 			Assert.assertEquals(title2, exp2);
 
@@ -759,6 +771,7 @@ Srp.getProduct4Cart().click();
 		Log.info("User has clicked on the resources  Link from the footer of the page");
 		String title3 = driver.getTitle();
 		String exp3 = "Resources - MarkITplace";
+		Thread.sleep(10000);
 		try {
 			Assert.assertEquals(title3, exp3);
 
@@ -774,6 +787,7 @@ Srp.getProduct4Cart().click();
 
 		ft.getFSpecialOffers().click();
 		Log.info("User has clicked on the Special offer Link from the footer of the page");
+		Thread.sleep(10000);
 		String title4 = driver.getTitle();
 		String exp4 = "Special Offers - MarkITplace";
 		try {
@@ -791,6 +805,7 @@ Srp.getProduct4Cart().click();
 
 		ft.getFFavorites().click();
 		Log.info("User has clicked on the Special offer Link from the footer of the page");
+		Thread.sleep(10000);
 		String title5 = driver.getTitle();
 		String exp5 = "Favorites - MarkITplace";
 		try {
@@ -835,6 +850,7 @@ Srp.getProduct4Cart().click();
 		Header head = new Header(driver);
 		head.getOrderBtn().click();
 		Log.info("User has clicked on the order button from the header of the page");
+		Thread.sleep(10000);
 		String title5 = driver.getTitle();
 		String exp5 = "Orders - MarkITplace";
 		try {
@@ -985,15 +1001,16 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(Act2, exp1);
 	}
 
-	@Test(priority = 28)
+	@Test(priority = 28,enabled=false)
 
-	public void ValidateAllReportsLinks() {
+	public void ValidateAllReportsLinks() throws InterruptedException {
 		driver.navigate().back();
 		SoftAssert SF = new SoftAssert();
 		Header head = new Header(driver);
 		head.getReports().click();
 		driver.findElement(By.linkText("Assets")).click();
 		Log.info("User has clicked on the Assets report from Report tab");
+		Thread.sleep(10000);
 		String title5 = driver.getTitle();
 		String exp5 = "Assets Report - MarkITplace";
 		//try {
@@ -1022,6 +1039,7 @@ Srp.getProduct4Cart().click();
 
 		head.getReports().click();
 		driver.findElement(By.linkText("Days to Ship")).click();
+		Thread.sleep(10000);
 		Log.info("User has clicked on the Days To Ship report from Report tab");
 		String title6 = driver.getTitle();
 		String exp6 = "Days To Ship Report - MarkITplace";
@@ -1051,8 +1069,10 @@ Srp.getProduct4Cart().click();
 		//9march/Assert.assertEquals(title6, exp6);
 
 		head.getReports().click();
+	
 		driver.findElement(By.linkText("Expiration")).click();
 		Log.info("User has clicked on the Expiration report from Report tab");
+		Thread.sleep(5000);
 		String title7 = driver.getTitle();
 		String exp7 = "Expiration Report - MarkITplace";
 		//try {
@@ -1080,8 +1100,10 @@ Srp.getProduct4Cart().click();
 		//9march/Assert.assertEquals(title7, exp7);
 
 		head.getReports().click();
+		Thread.sleep(5000);
 		driver.findElement(By.linkText("Inventory")).click();
 		Log.info("User has clicked on the Inventory report from Report tab");
+		Thread.sleep(5000);
 		String title8 = driver.getTitle();
 		String exp8 = "Inventory Report - MarkITplace";
 		//try {
@@ -1109,7 +1131,9 @@ Srp.getProduct4Cart().click();
 		//9marchAssert.assertEquals(title8, exp8);
 
 		head.getReports().click();
+		
 		driver.findElement(By.linkText("Invoices")).click();
+		Thread.sleep(5000);
 		Log.info("User has clicked on the Invoices report from Report tab");
 		String title9 = driver.getTitle();
 		String exp9 = "Invoices Report - MarkITplace";
@@ -1140,7 +1164,9 @@ Srp.getProduct4Cart().click();
 		//9march/Assert.assertEquals(title9, exp9);
 
 		head.getReports().click();
+		
 		driver.findElement(By.linkText("Invoice Line")).click();
+		Thread.sleep(5000);
 		Log.info("User has clicked on the Invoice Line report from Report tab");
 		String title10 = driver.getTitle();
 		String exp10 = "Invoice Line Report - MarkITplace";
@@ -1171,8 +1197,10 @@ Srp.getProduct4Cart().click();
 		// Assert.assertEquals(title10, exp10);
 		//driver.navigate().back();
 		head.getReports().click();
+		
 		driver.findElement(By.linkText("Licenses")).click();
 		Log.info("User has clicked on the Licenses report from Report tab");
+		Thread.sleep(5000);
 		String title11 = driver.getTitle();
 		String exp11 = "Licenses Report - MarkITplace";
 		//try {
@@ -1200,9 +1228,11 @@ Srp.getProduct4Cart().click();
 		//9march/Assert.assertEquals(title11, exp11);
 
 		head.getReports().click();
+		
 		// driver.findElement(By.linkText("Orders")).click();
 		driver.findElement(By.xpath("(//a[text()='Orders'])[5]")).click();
 		Log.info("User has clicked on the Orders report from Report tab");
+		Thread.sleep(5000);
 		String title12 = driver.getTitle();
 		String exp12 = "Orders Report - MarkITplace";
 		//try {
@@ -1232,6 +1262,7 @@ Srp.getProduct4Cart().click();
 		head.getReports().click();
 		driver.findElement(By.linkText("Order Line")).click();
 		Log.info("User has clicked on the Order Line report from Report tab");
+		Thread.sleep(5000);
 		String title13 = driver.getTitle();
 		String exp13 = "Order Line Report - MarkITplace";
 		//try {
@@ -1261,6 +1292,7 @@ Srp.getProduct4Cart().click();
 		head.getReports().click();
 		driver.findElement(By.linkText("PARs")).click();
 		Log.info("User has clicked on the PARs report from Report tab");
+		Thread.sleep(5000);
 		String title14 = driver.getTitle();
 		String exp14 = "PARs Report - MarkITplace";
 		//try {
@@ -1289,6 +1321,7 @@ Srp.getProduct4Cart().click();
 		head.getReports().click();
 		driver.findElement(By.linkText("Quotes")).click();
 		Log.info("User has clicked on the Quotes report from Report tab");
+		Thread.sleep(5000);
 		String title15 = driver.getTitle();
 		String exp15 = "Quotes Report - MarkITplace";
 		//try {
@@ -1318,6 +1351,7 @@ Srp.getProduct4Cart().click();
 		head.getReports().click();
 		driver.findElement(By.linkText("Receiving Log")).click();
 		Log.info("User has clicked on the Receiving Log report from Report tab");
+		Thread.sleep(5000);
 		String title16 = driver.getTitle();
 		String exp16 = "Receiving Log Report - MarkITplace";
 		//try {
@@ -1347,6 +1381,7 @@ Srp.getProduct4Cart().click();
 		head.getReports().click();
 		driver.findElement(By.linkText("Shipments")).click();
 		Log.info("User has clicked on the Shipments report from Report tab");
+		Thread.sleep(5000);
 		String title17 = driver.getTitle();
 		String exp17 = "Shipments Report - MarkITplace";
 		/*try {
@@ -1377,6 +1412,7 @@ Srp.getProduct4Cart().click();
 		head.getReports().click();
 		driver.findElement(By.linkText("Standards")).click();
 		Log.info("User has clicked on the Shipments report from Report tab");
+		Thread.sleep(5000);
 		String title18 = driver.getTitle();
 		String exp18 = "Standards Report - MarkITplace";
 		/*try {
@@ -1407,6 +1443,7 @@ Srp.getProduct4Cart().click();
 		head.getReports().click();
 		driver.findElement(By.linkText("Warranties")).click();
 		Log.info("User has clicked on the Warranties report from Report tab");
+		Thread.sleep(5000);
 		String title19 = driver.getTitle();
 		String exp19 = "Warranties Report - MarkITplace";
 		/*try {

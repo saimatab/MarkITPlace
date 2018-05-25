@@ -16,7 +16,8 @@ public class PDP {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;
 	}
-
+	By CartClose= By.xpath("(//button[@class='mfp-close'])[1]");
+	By Cartbtn=By.xpath("//a[@class='add_to_cart btn btn-primary show-for-tablet modal-btn hide-for-print']");
 	By favoriteIcon= By.xpath("//a[@class='my-lists' and text()='Favorites']");
 		
 	public WebElement getfavoriteIcon()
@@ -24,4 +25,14 @@ public class PDP {
 		return driver.findElement(favoriteIcon);
 		
 	}
+	public WebElement getCartbtn()
+	{
+		return driver.findElement(Cartbtn);
+	}
+	
+	public WebElement getCartClose()
+	{
+		return driver.findElement(CartClose);
+	}
+	
 }
