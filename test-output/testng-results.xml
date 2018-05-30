@@ -2,120 +2,120 @@
 <testng-results skipped="0" failed="0" ignored="4" total="31" passed="27">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="561547" started-at="2018-05-29T03:33:51Z" finished-at="2018-05-29T03:43:12Z">
+  <suite name="Default suite" duration-ms="555594" started-at="2018-05-29T08:32:51Z" finished-at="2018-05-29T08:42:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="561547" started-at="2018-05-29T03:33:51Z" finished-at="2018-05-29T03:43:12Z">
+    <test name="Default test" duration-ms="555594" started-at="2018-05-29T08:32:51Z" finished-at="2018-05-29T08:42:07Z">
       <class name="smokeTest.ValidateSmokeTest">
-        <test-method status="PASS" signature="ValidateLogin()[pri:0, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateLogin" duration-ms="50522" started-at="2018-05-29T08:33:51Z" finished-at="2018-05-29T08:34:41Z">
+        <test-method status="PASS" signature="ValidateLogin()[pri:0, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateLogin" duration-ms="49681" started-at="2018-05-29T13:32:51Z" finished-at="2018-05-29T13:33:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateLogin -->
-        <test-method status="PASS" signature="ValidateFavoriteIcon()[pri:1, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFavoriteIcon" duration-ms="16179" started-at="2018-05-29T08:34:41Z" finished-at="2018-05-29T08:34:58Z">
+        <test-method status="PASS" signature="ValidateFavoriteIcon()[pri:1, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFavoriteIcon" duration-ms="17345" started-at="2018-05-29T13:33:41Z" finished-at="2018-05-29T13:33:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateFavoriteIcon -->
-        <test-method status="PASS" signature="ValidateSearching()[pri:2, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSearching" duration-ms="9698" started-at="2018-05-29T08:34:58Z" finished-at="2018-05-29T08:35:07Z">
+        <test-method status="PASS" signature="ValidateSearching()[pri:2, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSearching" duration-ms="13116" started-at="2018-05-29T13:33:58Z" finished-at="2018-05-29T13:34:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateSearching -->
-        <test-method status="PASS" signature="ValidatePDPandAddToCart()[pri:5, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePDPandAddToCart" duration-ms="30238" started-at="2018-05-29T08:35:07Z" finished-at="2018-05-29T08:35:37Z">
+        <test-method status="PASS" signature="ValidatePDPandAddToCart()[pri:5, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePDPandAddToCart" duration-ms="31271" started-at="2018-05-29T13:34:11Z" finished-at="2018-05-29T13:34:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatePDPandAddToCart -->
-        <test-method status="PASS" signature="ValidateRecentViewLink()[pri:6, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateRecentViewLink" duration-ms="13661" started-at="2018-05-29T08:35:38Z" finished-at="2018-05-29T08:35:51Z">
+        <test-method status="PASS" signature="ValidateRecentViewLink()[pri:6, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateRecentViewLink" duration-ms="13610" started-at="2018-05-29T13:34:42Z" finished-at="2018-05-29T13:34:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateRecentViewLink -->
-        <test-method status="PASS" signature="ValidateFooterLogo()[pri:7, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFooterLogo" duration-ms="2660" started-at="2018-05-29T08:35:51Z" finished-at="2018-05-29T08:35:54Z">
+        <test-method status="PASS" signature="ValidateFooterLogo()[pri:7, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFooterLogo" duration-ms="2269" started-at="2018-05-29T13:34:56Z" finished-at="2018-05-29T13:34:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateFooterLogo -->
-        <test-method status="PASS" signature="ValidateMyProfNavigation()[pri:8, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateMyProfNavigation" duration-ms="7436" started-at="2018-05-29T08:35:54Z" finished-at="2018-05-29T08:36:01Z">
+        <test-method status="PASS" signature="ValidateMyProfNavigation()[pri:8, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateMyProfNavigation" duration-ms="6965" started-at="2018-05-29T13:34:58Z" finished-at="2018-05-29T13:35:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateMyProfNavigation -->
-        <test-method status="PASS" signature="ValidateHeaderLogo()[pri:9, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateHeaderLogo" duration-ms="2147" started-at="2018-05-29T08:36:01Z" finished-at="2018-05-29T08:36:03Z">
+        <test-method status="PASS" signature="ValidateHeaderLogo()[pri:9, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateHeaderLogo" duration-ms="2135" started-at="2018-05-29T13:35:05Z" finished-at="2018-05-29T13:35:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateHeaderLogo -->
-        <test-method status="PASS" signature="ValidateStandardsCatalog()[pri:10, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateStandardsCatalog" duration-ms="5416" started-at="2018-05-29T08:36:03Z" finished-at="2018-05-29T08:36:09Z">
+        <test-method status="PASS" signature="ValidateStandardsCatalog()[pri:10, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateStandardsCatalog" duration-ms="5351" started-at="2018-05-29T13:35:07Z" finished-at="2018-05-29T13:35:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateStandardsCatalog -->
-        <test-method status="PASS" signature="ValidateStandardsCatalogDetail()[pri:11, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateStandardsCatalogDetail" duration-ms="18579" started-at="2018-05-29T08:36:09Z" finished-at="2018-05-29T08:36:27Z">
+        <test-method status="PASS" signature="ValidateStandardsCatalogDetail()[pri:11, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateStandardsCatalogDetail" duration-ms="19035" started-at="2018-05-29T13:35:13Z" finished-at="2018-05-29T13:35:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateStandardsCatalogDetail -->
-        <test-method status="PASS" signature="ValidateAllProduct()[pri:12, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateAllProduct" duration-ms="6068" started-at="2018-05-29T08:36:27Z" finished-at="2018-05-29T08:36:33Z">
+        <test-method status="PASS" signature="ValidateAllProduct()[pri:12, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateAllProduct" duration-ms="6832" started-at="2018-05-29T13:35:32Z" finished-at="2018-05-29T13:35:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateAllProduct -->
-        <test-method status="PASS" signature="ValidateAudioCablesCategory()[pri:13, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateAudioCablesCategory" duration-ms="7590" started-at="2018-05-29T08:36:33Z" finished-at="2018-05-29T08:36:41Z">
+        <test-method status="PASS" signature="ValidateAudioCablesCategory()[pri:13, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateAudioCablesCategory" duration-ms="5633" started-at="2018-05-29T13:35:39Z" finished-at="2018-05-29T13:35:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateAudioCablesCategory -->
-        <test-method status="PASS" signature="ValidateResources()[pri:14, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateResources" duration-ms="13988" started-at="2018-05-29T08:36:41Z" finished-at="2018-05-29T08:36:55Z">
+        <test-method status="PASS" signature="ValidateResources()[pri:14, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateResources" duration-ms="12417" started-at="2018-05-29T13:35:44Z" finished-at="2018-05-29T13:35:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateResources -->
-        <test-method status="PASS" signature="ValidateSpecialOffer()[pri:15, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSpecialOffer" duration-ms="9495" started-at="2018-05-29T08:36:55Z" finished-at="2018-05-29T08:37:05Z">
+        <test-method status="PASS" signature="ValidateSpecialOffer()[pri:15, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSpecialOffer" duration-ms="11491" started-at="2018-05-29T13:35:57Z" finished-at="2018-05-29T13:36:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateSpecialOffer -->
-        <test-method status="PASS" signature="ValidateCartPage()[pri:16, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCartPage" duration-ms="5662" started-at="2018-05-29T08:37:05Z" finished-at="2018-05-29T08:37:10Z">
+        <test-method status="PASS" signature="ValidateCartPage()[pri:16, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCartPage" duration-ms="6813" started-at="2018-05-29T13:36:08Z" finished-at="2018-05-29T13:36:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCartPage -->
-        <test-method status="PASS" signature="ValidateCheckoutProcess()[pri:18, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutProcess" duration-ms="66706" started-at="2018-05-29T08:37:10Z" finished-at="2018-05-29T08:38:17Z">
+        <test-method status="PASS" signature="ValidateCheckoutProcess()[pri:18, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutProcess" duration-ms="67181" started-at="2018-05-29T13:36:15Z" finished-at="2018-05-29T13:37:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCheckoutProcess -->
-        <test-method status="PASS" signature="ValidateCheckoutHeaderLogo()[pri:19, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutHeaderLogo" duration-ms="13239" started-at="2018-05-29T08:38:17Z" finished-at="2018-05-29T08:38:30Z">
+        <test-method status="PASS" signature="ValidateCheckoutHeaderLogo()[pri:19, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutHeaderLogo" duration-ms="12760" started-at="2018-05-29T13:37:22Z" finished-at="2018-05-29T13:37:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCheckoutHeaderLogo -->
-        <test-method status="PASS" signature="ValidateCheckoutFooterLogo()[pri:20, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutFooterLogo" duration-ms="3278" started-at="2018-05-29T08:38:30Z" finished-at="2018-05-29T08:38:33Z">
+        <test-method status="PASS" signature="ValidateCheckoutFooterLogo()[pri:20, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutFooterLogo" duration-ms="2304" started-at="2018-05-29T13:37:35Z" finished-at="2018-05-29T13:37:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCheckoutFooterLogo -->
-        <test-method status="PASS" signature="ValidateFooterLinks()[pri:21, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFooterLinks" duration-ms="78359" started-at="2018-05-29T08:38:33Z" finished-at="2018-05-29T08:39:52Z">
+        <test-method status="PASS" signature="ValidateFooterLinks()[pri:21, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFooterLinks" duration-ms="71429" started-at="2018-05-29T13:37:37Z" finished-at="2018-05-29T13:38:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateFooterLinks -->
-        <test-method status="PASS" signature="ValidateTrackpage()[pri:22, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateTrackpage" duration-ms="33808" started-at="2018-05-29T08:39:52Z" finished-at="2018-05-29T08:40:26Z">
+        <test-method status="PASS" signature="ValidateTrackpage()[pri:22, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateTrackpage" duration-ms="55720" started-at="2018-05-29T13:38:49Z" finished-at="2018-05-29T13:39:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateTrackpage -->
-        <test-method status="PASS" signature="ValidateordersPage()[pri:23, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateordersPage" duration-ms="60530" started-at="2018-05-29T08:40:26Z" finished-at="2018-05-29T08:41:26Z">
+        <test-method status="PASS" signature="ValidateordersPage()[pri:23, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateordersPage" duration-ms="31496" started-at="2018-05-29T13:39:44Z" finished-at="2018-05-29T13:40:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateordersPage -->
-        <test-method status="PASS" signature="ValidatePurchaseAnalysisPage()[pri:24, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePurchaseAnalysisPage" duration-ms="24542" started-at="2018-05-29T08:41:26Z" finished-at="2018-05-29T08:41:51Z">
+        <test-method status="PASS" signature="ValidatePurchaseAnalysisPage()[pri:24, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePurchaseAnalysisPage" duration-ms="16960" started-at="2018-05-29T13:40:16Z" finished-at="2018-05-29T13:40:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatePurchaseAnalysisPage -->
-        <test-method status="PASS" signature="ValidatePAEmail()[pri:25, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePAEmail" duration-ms="927" started-at="2018-05-29T08:41:51Z" finished-at="2018-05-29T08:41:52Z">
+        <test-method status="PASS" signature="ValidatePAEmail()[pri:25, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePAEmail" duration-ms="734" started-at="2018-05-29T13:40:33Z" finished-at="2018-05-29T13:40:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatePAEmail -->
-        <test-method status="PASS" signature="ValidateCalendarPage()[pri:26, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCalendarPage" duration-ms="11343" started-at="2018-05-29T08:41:52Z" finished-at="2018-05-29T08:42:03Z">
+        <test-method status="PASS" signature="ValidateCalendarPage()[pri:26, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCalendarPage" duration-ms="5714" started-at="2018-05-29T13:40:34Z" finished-at="2018-05-29T13:40:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCalendarPage -->
-        <test-method status="PASS" signature="ValidateCalendarLinks()[pri:27, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCalendarLinks" duration-ms="31421" started-at="2018-05-29T08:42:03Z" finished-at="2018-05-29T08:42:34Z">
+        <test-method status="PASS" signature="ValidateCalendarLinks()[pri:27, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCalendarLinks" duration-ms="32460" started-at="2018-05-29T13:40:39Z" finished-at="2018-05-29T13:41:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCalendarLinks -->
-        <test-method status="PASS" signature="ValidateSavedReports()[pri:29, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSavedReports" duration-ms="4678" started-at="2018-05-29T08:42:34Z" finished-at="2018-05-29T08:42:39Z">
+        <test-method status="PASS" signature="ValidateSavedReports()[pri:29, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSavedReports" duration-ms="9480" started-at="2018-05-29T13:41:12Z" finished-at="2018-05-29T13:41:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateSavedReports -->
-        <test-method status="PASS" signature="ValidateCompaePage()[pri:30, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCompaePage" duration-ms="30898" started-at="2018-05-29T08:42:39Z" finished-at="2018-05-29T08:43:10Z">
+        <test-method status="PASS" signature="ValidateCompaePage()[pri:30, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCompaePage" duration-ms="42856" started-at="2018-05-29T13:41:21Z" finished-at="2018-05-29T13:42:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCompaePage -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="closebrowser" is-config="true" duration-ms="2390" started-at="2018-05-29T08:43:10Z" finished-at="2018-05-29T08:43:12Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="closebrowser" is-config="true" duration-ms="2448" started-at="2018-05-29T13:42:04Z" finished-at="2018-05-29T13:42:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
