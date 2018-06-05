@@ -986,7 +986,7 @@ Srp.getProduct4Cart().click();
 		driver.navigate().back();
 		driver.findElement(By.xpath("//a[@class='tab-link']")).click();
 		Thread.sleep(5000);
-		driver.findElement(By.xpath("(//span[text()='(1) SAMSUNG'])[1]")).click();
+		driver.findElement(By.xpath("(//span[contains(text(),'SAMSUNG')])[1]")).click();
 		String Act2 = driver.getTitle();
 		try {
 			Assert.assertEquals(Act2, exp1);
