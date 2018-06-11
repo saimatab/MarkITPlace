@@ -2,128 +2,128 @@
 <testng-results skipped="0" failed="1" ignored="4" total="31" passed="26">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="530151" started-at="2018-06-04T06:39:36Z" finished-at="2018-06-04T06:48:26Z">
+  <suite name="Default suite" duration-ms="774720" started-at="2018-06-11T10:08:36Z" finished-at="2018-06-11T10:21:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="530151" started-at="2018-06-04T06:39:36Z" finished-at="2018-06-04T06:48:26Z">
+    <test name="Default test" duration-ms="774720" started-at="2018-06-11T10:08:36Z" finished-at="2018-06-11T10:21:31Z">
       <class name="smokeTest.ValidateSmokeTest">
-        <test-method status="PASS" signature="ValidateLogin()[pri:0, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateLogin" duration-ms="46623" started-at="2018-06-04T11:39:36Z" finished-at="2018-06-04T11:40:23Z">
+        <test-method status="PASS" signature="ValidateLogin()[pri:0, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateLogin" duration-ms="68597" started-at="2018-06-11T15:08:36Z" finished-at="2018-06-11T15:09:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateLogin -->
-        <test-method status="PASS" signature="ValidateFavoriteIcon()[pri:1, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFavoriteIcon" duration-ms="16258" started-at="2018-06-04T11:40:23Z" finished-at="2018-06-04T11:40:39Z">
+        <test-method status="PASS" signature="ValidateFavoriteIcon()[pri:1, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFavoriteIcon" duration-ms="17478" started-at="2018-06-11T15:09:45Z" finished-at="2018-06-11T15:10:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateFavoriteIcon -->
-        <test-method status="PASS" signature="ValidateSearching()[pri:2, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSearching" duration-ms="8485" started-at="2018-06-04T11:40:39Z" finished-at="2018-06-04T11:40:47Z">
+        <test-method status="PASS" signature="ValidateSearching()[pri:2, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSearching" duration-ms="8925" started-at="2018-06-11T15:10:02Z" finished-at="2018-06-11T15:10:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateSearching -->
-        <test-method status="PASS" signature="ValidatePDPandAddToCart()[pri:5, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePDPandAddToCart" duration-ms="28069" started-at="2018-06-04T11:40:47Z" finished-at="2018-06-04T11:41:15Z">
+        <test-method status="PASS" signature="ValidatePDPandAddToCart()[pri:5, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePDPandAddToCart" duration-ms="28665" started-at="2018-06-11T15:10:11Z" finished-at="2018-06-11T15:10:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidatePDPandAddToCart -->
-        <test-method status="PASS" signature="ValidateRecentViewLink()[pri:6, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateRecentViewLink" duration-ms="13840" started-at="2018-06-04T11:41:15Z" finished-at="2018-06-04T11:41:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateRecentViewLink -->
-        <test-method status="PASS" signature="ValidateFooterLogo()[pri:7, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFooterLogo" duration-ms="2738" started-at="2018-06-04T11:41:29Z" finished-at="2018-06-04T11:41:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateFooterLogo -->
-        <test-method status="PASS" signature="ValidateMyProfNavigation()[pri:8, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateMyProfNavigation" duration-ms="7841" started-at="2018-06-04T11:41:32Z" finished-at="2018-06-04T11:41:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateMyProfNavigation -->
-        <test-method status="PASS" signature="ValidateHeaderLogo()[pri:9, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateHeaderLogo" duration-ms="2107" started-at="2018-06-04T11:41:40Z" finished-at="2018-06-04T11:41:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateHeaderLogo -->
-        <test-method status="PASS" signature="ValidateStandardsCatalog()[pri:10, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateStandardsCatalog" duration-ms="5995" started-at="2018-06-04T11:41:42Z" finished-at="2018-06-04T11:41:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateStandardsCatalog -->
-        <test-method status="PASS" signature="ValidateStandardsCatalogDetail()[pri:11, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateStandardsCatalogDetail" duration-ms="19647" started-at="2018-06-04T11:41:48Z" finished-at="2018-06-04T11:42:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateStandardsCatalogDetail -->
-        <test-method status="PASS" signature="ValidateAllProduct()[pri:12, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateAllProduct" duration-ms="5756" started-at="2018-06-04T11:42:08Z" finished-at="2018-06-04T11:42:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateAllProduct -->
-        <test-method status="PASS" signature="ValidateAudioCablesCategory()[pri:13, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateAudioCablesCategory" duration-ms="6962" started-at="2018-06-04T11:42:13Z" finished-at="2018-06-04T11:42:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateAudioCablesCategory -->
-        <test-method status="PASS" signature="ValidateResources()[pri:14, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateResources" duration-ms="12825" started-at="2018-06-04T11:42:20Z" finished-at="2018-06-04T11:42:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateResources -->
-        <test-method status="PASS" signature="ValidateSpecialOffer()[pri:15, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSpecialOffer" duration-ms="8125" started-at="2018-06-04T11:42:33Z" finished-at="2018-06-04T11:42:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateSpecialOffer -->
-        <test-method status="PASS" signature="ValidateCartPage()[pri:16, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCartPage" duration-ms="5171" started-at="2018-06-04T11:42:41Z" finished-at="2018-06-04T11:42:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateCartPage -->
-        <test-method status="PASS" signature="ValidateCheckoutProcess()[pri:18, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutProcess" duration-ms="67040" started-at="2018-06-04T11:42:47Z" finished-at="2018-06-04T11:43:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateCheckoutProcess -->
-        <test-method status="PASS" signature="ValidateCheckoutHeaderLogo()[pri:19, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutHeaderLogo" duration-ms="13909" started-at="2018-06-04T11:43:54Z" finished-at="2018-06-04T11:44:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateCheckoutHeaderLogo -->
-        <test-method status="PASS" signature="ValidateCheckoutFooterLogo()[pri:20, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutFooterLogo" duration-ms="2472" started-at="2018-06-04T11:44:07Z" finished-at="2018-06-04T11:44:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateCheckoutFooterLogo -->
-        <test-method status="PASS" signature="ValidateFooterLinks()[pri:21, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFooterLinks" duration-ms="72835" started-at="2018-06-04T11:44:10Z" finished-at="2018-06-04T11:45:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateFooterLinks -->
-        <test-method status="PASS" signature="ValidateTrackpage()[pri:22, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateTrackpage" duration-ms="16421" started-at="2018-06-04T11:45:23Z" finished-at="2018-06-04T11:45:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateTrackpage -->
-        <test-method status="PASS" signature="ValidateordersPage()[pri:23, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateordersPage" duration-ms="50794" started-at="2018-06-04T11:45:39Z" finished-at="2018-06-04T11:46:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateordersPage -->
-        <test-method status="PASS" signature="ValidatePurchaseAnalysisPage()[pri:24, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePurchaseAnalysisPage" duration-ms="21802" started-at="2018-06-04T11:46:30Z" finished-at="2018-06-04T11:46:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidatePurchaseAnalysisPage -->
-        <test-method status="PASS" signature="ValidatePAEmail()[pri:25, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePAEmail" duration-ms="1152" started-at="2018-06-04T11:46:52Z" finished-at="2018-06-04T11:46:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidatePAEmail -->
-        <test-method status="PASS" signature="ValidateCalendarPage()[pri:26, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCalendarPage" duration-ms="6488" started-at="2018-06-04T11:46:53Z" finished-at="2018-06-04T11:46:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateCalendarPage -->
-        <test-method status="FAIL" signature="ValidateCalendarLinks()[pri:27, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCalendarLinks" duration-ms="36206" started-at="2018-06-04T11:46:59Z" finished-at="2018-06-04T11:47:36Z">
+        <test-method status="FAIL" signature="ValidateRecentViewLink()[pri:6, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateRecentViewLink" duration-ms="10213" started-at="2018-06-11T15:10:40Z" finished-at="2018-06-11T15:10:50Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//span[text()='(4) SAMSUNG'])[1]"}  (Session info: chrome=66.0.3359.181)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'DESKTOP-B75F35K', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\bilaw\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}Session ID: 2e25e5de03ab363372171af28ea25093*** Element info: {Using=xpath, value=(//span[text()='(4) SAMSUNG'])[1]}]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"See all recently viewed"}  (Session info: chrome=67.0.3396.79)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'DESKTOP-B75F35K', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\bilaw\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6*** Element info: {Using=link text, value=See all recently viewed}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[text()='(4) SAMSUNG'])[1]"}  (Session info: chrome=66.0.3359.181)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'DESKTOP-B75F35K', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\bilaw\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}Session ID: 2e25e5de03ab363372171af28ea25093*** Element info: {Using=xpath, value=(//span[text()='(4) SAMSUNG'])[1]}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)at java.lang.reflect.Constructor.newInstance(Unknown Source)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)at org.openqa.selenium.By$ByXPath.findElement(By.java:361)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)at smokeTest.ValidateSmokeTest.ValidateCalendarLinks(ValidateSmokeTest.java:988)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"See all recently viewed"}  (Session info: chrome=67.0.3396.79)  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.htmlBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'DESKTOP-B75F35K', ip: '10.0.2.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\bilaw\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6*** Element info: {Using=link text, value=See all recently viewed}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)at java.lang.reflect.Constructor.newInstance(Unknown Source)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425)at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)at pageObjects.FavouritePage.getRecentlyViewed(FavouritePage.java:58)at smokeTest.ValidateSmokeTest.ValidateRecentViewLink(ValidateSmokeTest.java:333)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- ValidateRecentViewLink -->
+        <test-method status="PASS" signature="ValidateFooterLogo()[pri:7, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFooterLogo" duration-ms="3162" started-at="2018-06-11T15:10:50Z" finished-at="2018-06-11T15:10:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateFooterLogo -->
+        <test-method status="PASS" signature="ValidateMyProfNavigation()[pri:8, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateMyProfNavigation" duration-ms="10457" started-at="2018-06-11T15:10:53Z" finished-at="2018-06-11T15:11:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateMyProfNavigation -->
+        <test-method status="PASS" signature="ValidateHeaderLogo()[pri:9, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateHeaderLogo" duration-ms="4090" started-at="2018-06-11T15:11:04Z" finished-at="2018-06-11T15:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateHeaderLogo -->
+        <test-method status="PASS" signature="ValidateStandardsCatalog()[pri:10, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateStandardsCatalog" duration-ms="6578" started-at="2018-06-11T15:11:08Z" finished-at="2018-06-11T15:11:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateStandardsCatalog -->
+        <test-method status="PASS" signature="ValidateStandardsCatalogDetail()[pri:11, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateStandardsCatalogDetail" duration-ms="20409" started-at="2018-06-11T15:11:14Z" finished-at="2018-06-11T15:11:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateStandardsCatalogDetail -->
+        <test-method status="PASS" signature="ValidateAllProduct()[pri:12, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateAllProduct" duration-ms="10748" started-at="2018-06-11T15:11:35Z" finished-at="2018-06-11T15:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAllProduct -->
+        <test-method status="PASS" signature="ValidateAudioCablesCategory()[pri:13, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateAudioCablesCategory" duration-ms="7798" started-at="2018-06-11T15:11:46Z" finished-at="2018-06-11T15:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAudioCablesCategory -->
+        <test-method status="PASS" signature="ValidateResources()[pri:14, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateResources" duration-ms="15504" started-at="2018-06-11T15:11:53Z" finished-at="2018-06-11T15:12:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateResources -->
+        <test-method status="PASS" signature="ValidateSpecialOffer()[pri:15, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSpecialOffer" duration-ms="7125" started-at="2018-06-11T15:12:09Z" finished-at="2018-06-11T15:12:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSpecialOffer -->
+        <test-method status="PASS" signature="ValidateCartPage()[pri:16, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCartPage" duration-ms="5366" started-at="2018-06-11T15:12:16Z" finished-at="2018-06-11T15:12:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCartPage -->
+        <test-method status="PASS" signature="ValidateCheckoutProcess()[pri:18, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutProcess" duration-ms="70918" started-at="2018-06-11T15:12:21Z" finished-at="2018-06-11T15:13:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCheckoutProcess -->
+        <test-method status="PASS" signature="ValidateCheckoutHeaderLogo()[pri:19, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutHeaderLogo" duration-ms="14375" started-at="2018-06-11T15:13:32Z" finished-at="2018-06-11T15:13:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCheckoutHeaderLogo -->
+        <test-method status="PASS" signature="ValidateCheckoutFooterLogo()[pri:20, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCheckoutFooterLogo" duration-ms="3617" started-at="2018-06-11T15:13:47Z" finished-at="2018-06-11T15:13:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCheckoutFooterLogo -->
+        <test-method status="PASS" signature="ValidateFooterLinks()[pri:21, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateFooterLinks" duration-ms="109930" started-at="2018-06-11T15:13:50Z" finished-at="2018-06-11T15:15:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateFooterLinks -->
+        <test-method status="PASS" signature="ValidateTrackpage()[pri:22, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateTrackpage" duration-ms="150175" started-at="2018-06-11T15:15:40Z" finished-at="2018-06-11T15:18:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTrackpage -->
+        <test-method status="PASS" signature="ValidateordersPage()[pri:23, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateordersPage" duration-ms="23940" started-at="2018-06-11T15:18:10Z" finished-at="2018-06-11T15:18:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateordersPage -->
+        <test-method status="PASS" signature="ValidatePurchaseAnalysisPage()[pri:24, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePurchaseAnalysisPage" duration-ms="17820" started-at="2018-06-11T15:18:34Z" finished-at="2018-06-11T15:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatePurchaseAnalysisPage -->
+        <test-method status="PASS" signature="ValidatePAEmail()[pri:25, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidatePAEmail" duration-ms="8693" started-at="2018-06-11T15:18:52Z" finished-at="2018-06-11T15:19:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidatePAEmail -->
+        <test-method status="PASS" signature="ValidateCalendarPage()[pri:26, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCalendarPage" duration-ms="19578" started-at="2018-06-11T15:19:01Z" finished-at="2018-06-11T15:19:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCalendarPage -->
+        <test-method status="PASS" signature="ValidateCalendarLinks()[pri:27, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCalendarLinks" duration-ms="55662" started-at="2018-06-11T15:19:21Z" finished-at="2018-06-11T15:20:16Z">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- ValidateCalendarLinks -->
-        <test-method status="PASS" signature="ValidateSavedReports()[pri:29, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSavedReports" duration-ms="4687" started-at="2018-06-04T11:47:36Z" finished-at="2018-06-04T11:47:40Z">
+        <test-method status="PASS" signature="ValidateSavedReports()[pri:29, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateSavedReports" duration-ms="10212" started-at="2018-06-11T15:20:16Z" finished-at="2018-06-11T15:20:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateSavedReports -->
-        <test-method status="PASS" signature="ValidateCompaePage()[pri:30, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCompaePage" duration-ms="42426" started-at="2018-06-04T11:47:40Z" finished-at="2018-06-04T11:48:23Z">
+        <test-method status="PASS" signature="ValidateCompaePage()[pri:30, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="ValidateCompaePage" duration-ms="62299" started-at="2018-06-11T15:20:26Z" finished-at="2018-06-11T15:21:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateCompaePage -->
-        <test-method status="PASS" signature="closebrowser()[pri:0, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="closebrowser" is-config="true" duration-ms="3409" started-at="2018-06-04T11:48:23Z" finished-at="2018-06-04T11:48:26Z">
+        <test-method status="PASS" signature="closebrowser()[pri:0, instance:smokeTest.ValidateSmokeTest@7c0c77c7]" name="closebrowser" is-config="true" duration-ms="2272" started-at="2018-06-11T15:21:29Z" finished-at="2018-06-11T15:21:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->

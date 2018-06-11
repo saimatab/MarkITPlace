@@ -5,8 +5,8 @@
     <classes>
       <class name="smokeTest.ValidateSmokeTest">
         <methods>
+          <include name="ValidateRecentViewLink"/>
           <include name="closebrowser"/>
-          <include name="ValidateCalendarLinks"/>
         </methods>
       </class> <!-- smokeTest.ValidateSmokeTest -->
     </classes>
