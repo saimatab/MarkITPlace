@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>26/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 11 15:08:36 PKT 2018</td>
+<td>Started on:</td><td>Mon Jun 25 15:14:32 PKT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>774 seconds (774720 ms)</td>
+<tr><td>Total time:</td><td>534 seconds (534640 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,36 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='smokeTest.ValidateSmokeTest.ValidateRecentViewLink()'><b>ValidateRecentViewLink</b><br>Test class: smokeTest.ValidateSmokeTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;See all recently viewed&quot;}
-  (Session info: chrome=67.0.3396.79)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;DESKTOP-B75F35K&apos;, ip: &apos;10.0.2.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\bilaw\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
-Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6
-*** Element info: {Using=link text, value=See all recently viewed}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at pageObjects.FavouritePage.getRecentlyViewed(FavouritePage.java:58)
-	at smokeTest.ValidateSmokeTest.ValidateRecentViewLink(ValidateSmokeTest.java:333)
+<td title='smokeTest.ValidateSmokeTest.ValidateCheckoutProcess()'><b>ValidateCheckoutProcess</b><br>Test class: smokeTest.ValidateSmokeTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Order Confirmation - MarkITplace] but found [Checkout - MarkITplace]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at smokeTest.ValidateSmokeTest.ValidateCheckoutProcess(ValidateSmokeTest.java:672)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -130,36 +109,15 @@ Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace215078753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace215078753'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;See all recently viewed&quot;}
-  (Session info: chrome=67.0.3396.79)
-  (Driver info: chromedriver=2.36.540470 (e522d04694c7ebea4ba8821272dbef4f9b818c91),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
-System info: host: &apos;DESKTOP-B75F35K&apos;, ip: &apos;10.0.2.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\bilaw\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.79, webStorageEnabled: true}
-Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6
-*** Element info: {Using=link text, value=See all recently viewed}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at pageObjects.FavouritePage.getRecentlyViewed(FavouritePage.java:58)
-	at smokeTest.ValidateSmokeTest.ValidateRecentViewLink(ValidateSmokeTest.java:333)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1648232591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648232591'><pre>java.lang.AssertionError: expected [Order Confirmation - MarkITplace] but found [Checkout - MarkITplace]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at smokeTest.ValidateSmokeTest.ValidateCheckoutProcess(ValidateSmokeTest.java:672)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -186,7 +144,7 @@ Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>10</td>
+<td>72</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -199,22 +157,22 @@ Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateAllProduct()'><b>ValidateAllProduct</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>10</td>
+<td>7</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateAudioCablesCategory()'><b>ValidateAudioCablesCategory</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>7</td>
+<td>3</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateCalendarLinks()'><b>ValidateCalendarLinks</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>55</td>
+<td>50</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateCalendarPage()'><b>ValidateCalendarPage</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>19</td>
+<td>7</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateCartPage()'><b>ValidateCartPage</b><br>Test class: smokeTest.ValidateSmokeTest</td>
@@ -224,57 +182,52 @@ Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateCheckoutFooterLogo()'><b>ValidateCheckoutFooterLogo</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateCheckoutHeaderLogo()'><b>ValidateCheckoutHeaderLogo</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>14</td>
-<td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
-<tr>
-<td title='smokeTest.ValidateSmokeTest.ValidateCheckoutProcess()'><b>ValidateCheckoutProcess</b><br>Test class: smokeTest.ValidateSmokeTest</td>
-<td></td>
-<td>70</td>
+<td>12</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateCompaePage()'><b>ValidateCompaePage</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>62</td>
+<td>42</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateFavoriteIcon()'><b>ValidateFavoriteIcon</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>17</td>
+<td>15</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateFooterLinks()'><b>ValidateFooterLinks</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>109</td>
+<td>74</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateFooterLogo()'><b>ValidateFooterLogo</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>3</td>
+<td>2</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateHeaderLogo()'><b>ValidateHeaderLogo</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>4</td>
+<td>1</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateLogin()'><b>ValidateLogin</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>68</td>
+<td>49</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateMyProfNavigation()'><b>ValidateMyProfNavigation</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>10</td>
+<td>6</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidatePAEmail()'><b>ValidatePAEmail</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>8</td>
+<td>0</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidatePDPandAddToCart()'><b>ValidatePDPandAddToCart</b><br>Test class: smokeTest.ValidateSmokeTest</td>
@@ -284,22 +237,27 @@ Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidatePurchaseAnalysisPage()'><b>ValidatePurchaseAnalysisPage</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>17</td>
+<td>24</td>
+<td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
+<tr>
+<td title='smokeTest.ValidateSmokeTest.ValidateRecentViewLink()'><b>ValidateRecentViewLink</b><br>Test class: smokeTest.ValidateSmokeTest</td>
+<td></td>
+<td>13</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateResources()'><b>ValidateResources</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>15</td>
+<td>16</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateSavedReports()'><b>ValidateSavedReports</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>10</td>
+<td>6</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateSearching()'><b>ValidateSearching</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>8</td>
+<td>6</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateSpecialOffer()'><b>ValidateSpecialOffer</b><br>Test class: smokeTest.ValidateSmokeTest</td>
@@ -309,22 +267,22 @@ Session ID: 6a853f6cd85cb68bbf323bf56fa7b8b6
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateStandardsCatalog()'><b>ValidateStandardsCatalog</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>6</td>
+<td>5</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateStandardsCatalogDetail()'><b>ValidateStandardsCatalogDetail</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>20</td>
+<td>18</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateTrackpage()'><b>ValidateTrackpage</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>150</td>
+<td>8</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 <tr>
 <td title='smokeTest.ValidateSmokeTest.ValidateordersPage()'><b>ValidateordersPage</b><br>Test class: smokeTest.ValidateSmokeTest</td>
 <td></td>
-<td>23</td>
+<td>40</td>
 <td>smokeTest.ValidateSmokeTest@7c0c77c7</td></tr>
 </table><p>
 </body>
