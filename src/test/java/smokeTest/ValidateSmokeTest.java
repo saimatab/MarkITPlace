@@ -668,7 +668,7 @@ Srp.getProduct4Cart().click();
 			Log.error("User have not reached the order confirmation page");
 			Log.error(e.getMessage());
 		}
-		Thread.sleep(10000);
+		Thread.sleep(30000);
 		Assert.assertEquals(title5, "Order Confirmation - MarkITplace");
 		
 		Thread.sleep(5000);
@@ -772,7 +772,7 @@ Srp.getProduct4Cart().click();
 		Log.info("User has clicked on the resources  Link from the footer of the page");
 		String title3 = driver.getTitle();
 		String exp3 = "Resources - MarkITplace";
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		try {
 			Assert.assertEquals(title3, exp3);
 
