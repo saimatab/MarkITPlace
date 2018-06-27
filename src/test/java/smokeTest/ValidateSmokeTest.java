@@ -600,7 +600,7 @@ Srp.getProduct4Cart().click();
 
 	@Test(priority = 18)
 	public void ValidateCheckoutProcess() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, 5000);
+		WebDriverWait wait = new WebDriverWait(driver, 100);
 		Random random = new Random();
 		int x = random.nextInt(90000) + 100;
 		CartPage CP = new CartPage(driver);
@@ -669,6 +669,7 @@ Srp.getProduct4Cart().click();
 			Log.error(e.getMessage());
 		}
 		Thread.sleep(30000);
+		
 		Assert.assertEquals(title5, "Order Confirmation - MarkITplace");
 		
 		Thread.sleep(5000);
