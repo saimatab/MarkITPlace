@@ -668,7 +668,7 @@ Srp.getProduct4Cart().click();
 			Log.error("User have not reached the order confirmation page");
 			Log.error(e.getMessage());
 		}
-		Thread.sleep(30000);
+		Thread.sleep(100000);
 		
 		Assert.assertEquals(title5, "Order Confirmation - MarkITplace");
 		
