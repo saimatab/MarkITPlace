@@ -19,7 +19,7 @@ public class FavouritePage {
 	By Selectall = By.xpath("(//span[@class='control__indicator'])[2]");
 	By DeleteAll = By.xpath("(//a[@class='btn'])[2]");
 	By YesBtn=By.xpath("(//button[@class='btn btn-primary'])[2]");
-	By RecentlyViewed = By.linkText("See all recently viewed");
+	By RecentlyViewed = By.xpath("//a[text()='See all recently viewed']");
 	By CompactViewCheck= By.xpath("\\span[@class='control__indicator']");
 	By SelectAllCheck=By.xpath("//*[@id='shop-favorites']/div/section/section[1]/div[4]/div[2]/div/div[1]/label/span");
 	By AddAllCartBtn=By.id("addAllToCart");

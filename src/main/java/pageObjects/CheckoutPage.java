@@ -13,6 +13,7 @@ public WebDriver driver;
 		this.driver=driver;
 	}
 	
+	
 	By Newbtn=By.xpath("//a[text()='Use This Address']");
 	By PO = By.xpath("//input[@id='tbPO']");
 	By BillingDropdown=By.xpath("//div[@class='predictive-dropdown-arrow']");
@@ -23,6 +24,13 @@ public WebDriver driver;
 	By PlaceOrderBtn2=By.xpath("(//a[@class='btn btn-primary btn-save placeOrderBtn'])[2]");
 	By EmailConfirm=By.xpath("//input[@id='tbEmailConfirmation']");
 	By JavaClose=By.xpath("//button[@class='btn btn-default']");
+	By Reference=By.xpath("//input[@type='text' and @id='tbReference']");
+	
+	public WebElement getReference()
+	{
+		return driver.findElement(Reference);
+	}
+	
 	
 	public WebElement getNewbtn()
 	{
