@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,10 +48,18 @@ public WebDriver driver;
 		return driver.findElement(SearchboxFF);
 	}
 	
+	
+	
 	public WebElement getsearchbox()
 	{
 		return driver.findElement(Searchbox);
 	}
+	
+	public List<WebElement> getsearchboxCount()
+	{
+		return driver.findElements(Searchbox);
+	}
+	
 
 	public WebElement getStandardCatalogBtn()
 	{

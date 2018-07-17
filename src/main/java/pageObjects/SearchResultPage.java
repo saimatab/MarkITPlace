@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -68,6 +70,12 @@ public class SearchResultPage {
 	{
 		return driver.findElement(CloseIcon);
 	}
+	
+	public List<WebElement> getCloseIconCount()
+	{
+		return driver.findElements(CloseIcon);
+	}
+	
 	public WebElement getAddToCartCLose()
 	{
 		return driver.findElement(AddToCartCLose);
@@ -105,9 +113,20 @@ public class SearchResultPage {
 	{
 		return driver.findElement(prod1name);
 	}
+	
+	public List<WebElement> getProduct1NameCount()
+	{
+		return driver.findElements(prod1name);
+	}
+	
 	public WebElement getProduct5Cart()
 	{
 		return driver.findElement(Product5Cart);
+	}
+	
+	public List<WebElement> getProduct5CartCount()
+	{
+		return driver.findElements(Product5Cart);
 	}
 
 }

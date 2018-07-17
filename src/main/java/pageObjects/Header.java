@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -115,6 +117,13 @@ public WebElement getFavrtIcon()
 {
 	return driver.findElement(FavrtIcon);
 }
+
+public List<WebElement> getFavrtIconCount()
+{
+	return driver.findElements(FavrtIcon);
+}
+
+
 
 public WebElement getTrackBtn()
 {
