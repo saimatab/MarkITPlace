@@ -670,7 +670,7 @@ Srp.getProduct4Cart().click();
 		}
 		//Thread.sleep(100000);
 		
-		//Assert.assertEquals(title5, "Order Confirmation - MarkITplace");
+		Assert.assertEquals(title5, "Order Confirmation - MarkITplace");
 		
 		//Thread.sleep(5000);
 		
