@@ -7,6 +7,7 @@
         <methods>
           <include name="ValidateCheckoutProcess"/>
           <include name="closebrowser"/>
+          <include name="ValidateStandardsCatalogDetail"/>
         </methods>
       </class> <!-- smokeTest.ValidateSmokeTest -->
     </classes>
