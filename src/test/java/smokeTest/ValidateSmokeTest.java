@@ -598,7 +598,7 @@ Srp.getProduct4Cart().click();
 
 	}
 
-	@Test(priority = 18)
+	@Test(priority = 18,enabled=false)
 	public void ValidateCheckoutProcess() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 100);
 		Random random = new Random();

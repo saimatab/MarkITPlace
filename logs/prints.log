@@ -244,3 +244,62 @@ Session ID: c4b2f52bfba53e17a41ae1e859223e00
 23:23:10.028 [main] INFO  resources.base - User have reached the  Saved Report page after clicking on the Saved Report icon from the header of the page
 23:23:19.504 [main] INFO  resources.base - user is searching printer using the search textbox
 23:23:56.025 [main] INFO  resources.base - User Have Successfully reached the Compare page
+10:50:38.520 [main] INFO  resources.base - User Have Successfully Login To The Home Page
+10:50:43.833 [main] INFO  resources.base - User Have Successfully reached the favorites Page
+10:51:00.317 [main] INFO  resources.base - user is searching printer using the search textbox
+10:51:00.326 [main] INFO  resources.base - User Have Successfully reached the printer search listing page
+10:51:00.389 [main] INFO  resources.base - Search result data is Appearing on the Search Result Page
+10:51:10.973 [main] INFO  resources.base - User Have Successfully reached the PDP Page
+10:51:33.648 [main] INFO  resources.base - Recently Viewed Page is Opened
+10:51:37.336 [main] INFO  resources.base - User has clicked the Logo from the footer of the page
+10:51:37.347 [main] INFO  resources.base - User Have reached the Home Page clicking on the footer Logo
+10:51:40.235 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+10:51:40.249 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+10:51:42.625 [main] INFO  resources.base - User has clicked on the My Profile page from My Account dropdown
+10:51:45.167 [main] INFO  resources.base - User has clicked the Logo from the header of the page
+10:51:45.199 [main] INFO  resources.base - User Have reached the Home Page clicking on the Header Logo
+10:51:48.130 [main] INFO  resources.base - User has clicked on the Standard Catalog Navigation button from header
+10:51:48.159 [main] INFO  resources.base - User Have reached the Standard Catalog Page
+10:52:04.026 [main] ERROR resources.base - No standard Product found to click
+10:52:04.026 [main] ERROR resources.base - expected [HP Officejet Pro 8710 All-in-One - Multifunction printer - MarkITplace] but found [HP LaserJet Pro M402dne - Printer - MarkITplace]
+10:52:12.617 [main] INFO  resources.base - User has clicked on the All Product Nevigation button from the header
+10:52:12.628 [main] INFO  resources.base - User Have reached the All Product Page
+10:52:25.378 [main] INFO  resources.base - User has clicked on Audio Cables Category From All Products Page
+10:52:25.388 [main] INFO  resources.base - User Have reached the Audio Cables Category Page
+10:52:40.056 [main] INFO  resources.base - User has clicked on Resouces link from the header
+10:52:40.066 [main] INFO  resources.base - User Have reached the Resources Page
+10:52:47.829 [main] INFO  resources.base - User has clicked on Special Offer Link from the header
+10:52:47.836 [main] INFO  resources.base - User Have reached the Special Offer Page
+10:52:51.124 [main] INFO  resources.base - User has clicked on Cart Icon from the header
+10:52:51.158 [main] INFO  resources.base - User Have reached the Shopping Cart Page
+10:53:04.437 [main] INFO  resources.base - User has clicked the Logo from the header of the page
+10:53:14.451 [main] INFO  resources.base - User Have reached the Home Page clicking on the Header Logo
+10:53:17.489 [main] INFO  resources.base - User has clicked the Logo from the footer of the page
+10:53:17.495 [main] INFO  resources.base - User Have reached the Home Page clicking on the footer Logo
+10:53:20.337 [main] INFO  resources.base - User has clicked on the Standard Catalog Link from the footer of the page
+10:53:30.353 [main] INFO  resources.base - User Have reached the Standard Product page after clicking on the Standard Catalog Link from the footer of the page
+10:53:32.982 [main] INFO  resources.base - User has clicked on the All product Link from the footer of the page
+10:53:42.991 [main] INFO  resources.base - User Have reached the All Product page after clicking on the Standard Catalog Link from the footer of the page
+10:53:49.670 [main] INFO  resources.base - User has clicked on the resources  Link from the footer of the page
+10:54:04.691 [main] INFO  resources.base - User Have reached the resources page after clicking on the resources Link from the footer of the page
+10:54:09.974 [main] INFO  resources.base - User has clicked on the Special offer Link from the footer of the page
+10:54:19.995 [main] INFO  resources.base - User Have reached the Special offer after clicking on the Special offer Link from the footer of the page
+10:54:22.343 [main] INFO  resources.base - User has clicked on the Special offer Link from the footer of the page
+10:54:32.363 [main] INFO  resources.base - User Have reached the Favorites after clicking on the Favorites Link from the footer of the page
+10:54:40.865 [main] INFO  resources.base - User has clicked on the Track button from the header of the page
+10:54:40.905 [main] INFO  resources.base - User have reached the Track page after clicking on the Track button from the header of the page
+10:54:47.985 [main] INFO  resources.base - User has clicked on the order button from the header of the page
+10:54:58.021 [main] INFO  resources.base - User have reached the Order page after clicking on the Order button from the header of the page
+10:55:08.274 [main] INFO  resources.base - User has clicked on the Purchase Analysis button from the header of the page
+10:55:08.559 [main] INFO  resources.base - User have reached the Purchase Analysis page after clicking on the Purchase Analysis button from the header of the page
+10:55:08.695 [main] INFO  resources.base - User have clicked on email icon on purchase analysis Page
+10:55:08.995 [main] INFO  resources.base - User have entered the email on email field at purchase analysis Page
+10:55:09.242 [main] INFO  resources.base - User have click on Send button at email popup screen at purchase analysis Page
+10:55:14.179 [main] INFO  resources.base - User has clicked on the Calendar button from the header of the page
+10:55:14.189 [main] INFO  resources.base - User have reached the  Calendar page after clicking on the Calendar button from the header of the page
+10:55:29.107 [main] INFO  resources.base - User have reached the expiration report after clicking on the report button from the Calendar page from monthly view tab
+10:55:42.237 [main] INFO  resources.base - User have reached the expiration report after clicking on the report button from the Calendar page from Detail view tab
+10:55:46.916 [main] INFO  resources.base - User has clicked on the Saved Report icon from the header of the page
+10:55:46.924 [main] INFO  resources.base - User have reached the  Saved Report page after clicking on the Saved Report icon from the header of the page
+10:55:50.300 [main] INFO  resources.base - user is searching printer using the search textbox
+10:56:11.785 [main] INFO  resources.base - User Have Successfully reached the Compare page
