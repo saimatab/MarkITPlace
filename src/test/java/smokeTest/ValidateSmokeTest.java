@@ -1,4 +1,4 @@
-package smokeTest;
+	package smokeTest;
 
 import static org.testng.Assert.assertEquals;
 
@@ -605,8 +605,7 @@ Srp.getProduct4Cart().click();
 		int x = random.nextInt(90000) + 100;
 		CartPage CP = new CartPage(driver);
 		CP.getCheckoutBtn().click();
-		// String actitle=driver.getTitle();
-		// String extitle= "Checkout - MarkITplace";
+	
 		CheckoutPage CO = new CheckoutPage(driver);
 		Thread.sleep(10000);
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getPO()));
@@ -641,9 +640,11 @@ Srp.getProduct4Cart().click();
 
 		CO.getSaveBtn1().click();
 		Thread.sleep(9000);
+		wait.until(ExpectedConditions.elementToBeClickable(CO.getAttention()));
+		CO.getAttention().sendKeys("abcTest");
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getEmailConfirm()));
 		CO.getEmailConfirm().clear();
-		CO.getEmailConfirm().sendKeys("faizan.mamji@arpatech.com");
+		CO.getEmailConfirm().sendKeys("bilawal.alam@arpatech.com");
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getSaveBtn1()));
 		CO.getSaveBtn1().click();
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getPlaceOrderBtn()));
@@ -662,7 +663,7 @@ Srp.getProduct4Cart().click();
 			Thread.sleep(5000);
 			Assert.assertEquals(title5, "Order Confirmation - MarkITplace");
 
-			Log.info("User Have reached the order confirmation page after placing the order");
+			Log.info("User have reached the order confirmation page after placing the order");
 		} catch (Throwable e) {
 
 			Log.error("User have not reached the order confirmation page");
@@ -1501,6 +1502,7 @@ Srp.getProduct4Cart().click();
 	public void ValidateCompaePage() throws InterruptedException
 	{
 		WebDriverWait wt = new WebDriverWait(driver,20);
+		
 		//wt.until(ExpectedConditions.elementToBeClickable(locator))
 		SearchResultPage srp = new SearchResultPage(driver);
 		HomePage hp = new HomePage(driver);
@@ -1514,11 +1516,15 @@ Srp.getProduct4Cart().click();
 		//driver.findElement(By.xpath("(//div[@class='control__indicator'])[2]")).click();
 		//driver.findElement(By.linkText("Compare")).click();
 		//
-			srp.getCompare1().click();
+		srp.getCompare1().click();
 		srp.getCompare2().click();
 		srp.getCompareBtn().click();
 		
+		//wt.until(ExpectedConditions.invisibilityOf(hp.getsearchbox()));
 		
+		Thread.sleep(20000);
+		
+		wt.until(ExpectedConditions.invisibilityOf(srp.getCompareBtn()));
 		Exp = "Product Compare - MarkITplace";
 		act = driver.getTitle();
 		Assert.assertEquals(act, Exp);
@@ -1532,12 +1538,8 @@ Srp.getProduct4Cart().click();
 		    }
 		}
 		Assert.assertEquals(act, Exp);
-		
-		
-		
-		
 	}
-
+	
 	@AfterTest
 
 	public void closebrowser()
