@@ -5,8 +5,15 @@
     <classes>
       <class name="smokeTest.ValidateSmokeTest">
         <methods>
+          <include name="ValidateSearching"/>
+          <include name="ValidateCheckoutHeaderLogo"/>
+          <include name="ValidateCheckoutFooterLogo"/>
           <include name="ValidateCompaePage"/>
+          <include name="ValidateLogin"/>
           <include name="closebrowser"/>
+          <include name="ValidateHeaderLogo"/>
+          <include name="ValidateCalendarLinks"/>
+          <include name="ValidateFooterLogo"/>
         </methods>
       </class> <!-- smokeTest.ValidateSmokeTest -->
     </classes>
