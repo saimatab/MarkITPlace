@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [SmokeTestSuite]">
+  <listeners>
+    <listener class-name="resources.listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="ValidateSmokeTests(failed)">
     <classes>
       <class name="smokeTest.ValidateSmokeTest">
         <methods>
-          <include name="ValidateSearching"/>
-          <include name="ValidateCheckoutHeaderLogo"/>
-          <include name="ValidateCheckoutFooterLogo"/>
-          <include name="ValidateCompaePage"/>
-          <include name="ValidateLogin"/>
+          <include name="ValidatePAEmail"/>
+          <include name="ValidateAllProduct"/>
+          <include name="ValidateCalendarPage"/>
+          <include name="ValidateCheckoutProcess"/>
+          <include name="ValidateComparePage"/>
+          <include name="ValidateAudioCablesCategory"/>
+          <include name="ValidateMyProfNavigation"/>
+          <include name="ValidateSavedReports"/>
           <include name="closebrowser"/>
-          <include name="ValidateHeaderLogo"/>
-          <include name="ValidateCalendarLinks"/>
-          <include name="ValidateFooterLogo"/>
+          <include name="ValidatePAPage"/>
+          <include name="ValidateStandardsCatalogDetail"/>
         </methods>
       </class> <!-- smokeTest.ValidateSmokeTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- ValidateSmokeTests(failed) -->
+</suite> <!-- Failed suite [SmokeTestSuite] -->

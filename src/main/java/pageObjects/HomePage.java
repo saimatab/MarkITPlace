@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 public class HomePage {
 	
 public WebDriver driver;
-	
+By SoftwareLink=By.xpath("//h2[text()='Software']");
 	//By Usernamefield=By.name("username");
 	By Searchbox=By.xpath("//input[@id='x_main-search']");
 	//By SearchboxFF=By.xpath("//input[@id='x_main-search' and @class='main-search']");
@@ -29,6 +29,12 @@ public WebDriver driver;
 	//By Loginbtn=By.xpath("//input[@value='Login']");
 	
 	By FavoriteLink=By.xpath("//a[@class='my-lists']");
+
+	public WebElement getSoftwareLink()
+	{
+		return driver.findElement(SoftwareLink);
+		
+	}
 	
 	
 	public WebElement getFavoriteLink()

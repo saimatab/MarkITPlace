@@ -15,24 +15,29 @@ public WebDriver driver;
 	
 	By Attention = By.xpath("(//div[@class='field-container']/input)[1]");
 	By Newbtn=By.xpath("//a[text()='Use This Address']");
-	By PO = By.xpath("//input[@id='tbPO']");
+	//By PO = By.xpath("//input[@id='tbPO']");
+	By PO = By.xpath("(//input[@type='text'])[1]");
 	By BillingDropdown=By.xpath("//div[@class='predictive-dropdown-arrow']");
 	By Listvalue=By.xpath("//li[@value='[object Object]']");
-	By SaveBtn1=By.xpath("//a[@class='btn btn-primary btn-save']");
-	By ShippingAddValue=By.xpath("(//li[@value='[object Object]'])[1]");
+	
+	//By ShippingAddValue=By.xpath("(//li[@value='[object Object]'])[1]");
+	By ShippingAddValue=By.xpath("//li[contains(text(),'Cali7, 4050 Taylor St , SAN DIEGO, CA, 921102737, 5555555555')]");
+
 	By PlaceOrderBtn=By.xpath("(//a[@class='btn btn-primary btn-save placeOrderBtn'])[1]");
 	By PlaceOrderBtn2=By.xpath("(//a[@class='btn btn-primary btn-save placeOrderBtn'])[2]");
 	By EmailConfirm=By.xpath("//input[@id='tbEmailConfirmation']");
 	By JavaClose=By.xpath("//button[@class='btn btn-default']");
 	By Reference=By.xpath("//input[@type='text' and @id='tbReference']");
-	
+	By UseThisAddress=By.xpath("//a[@class='btn btn-primary use-this-address']");
 	
 	public WebElement getAttention()
 	{
 		return driver.findElement(Attention);
 	}
-	
-	
+	public WebElement getUseThisAddress()
+	{
+		return driver.findElement(UseThisAddress);
+	}
 	public WebElement getReference()
 	{
 		return driver.findElement(Reference);
@@ -74,12 +79,9 @@ public WebDriver driver;
 		return driver.findElement(Listvalue);
 	}
 	
-	public WebElement getSaveBtn1()
-	{
-		return driver.findElement(SaveBtn1);
-	}
 	
-	public WebElement getShippingAddValue()
+	
+	public WebElement ValidateordersPage()
 	{
 		return driver.findElement(ShippingAddValue);
 		
@@ -90,7 +92,11 @@ public WebDriver driver;
 		return driver.findElement(PlaceOrderBtn);
 	}
 	
-	
+	public WebElement getShippingAddValue()
+	{
+		return driver.findElement(ShippingAddValue);
+		
+	}
 	
 	//input[@id='tbPO']
 

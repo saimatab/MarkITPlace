@@ -17,6 +17,8 @@ public Header(WebDriver driver )
 
 }
 
+
+
 By HeadLogo=By.xpath("//img[@class='logo']");	
 By Searchbox=By.xpath("//input[@id='x_main-search']");
 
@@ -37,13 +39,18 @@ By OrderBtn=By.xpath("(//a[@class='top-link'])[3]");
 By Calendar=By.xpath("(//a[@class='top-link'])[1]");
 //By PAnalysisBtn=By.xpath("(//a[@class='top-link'])[4]");
 By Reports=By.xpath("(//a[@class='top-link'])[2]");
+By track=By.xpath("(//div[contains(@class,'homepage-nav-item-container')]//a[contains(@class,'')][contains(text(),'Track')]");
 
-By PAnalysisBtn=By.xpath("//a[@class='top-link' and text()='Purchase Analysis']");
+
+
+By PAnalysisBtn=By.xpath("//a[@class='top-link'][contains(text(),'Purchase Analysis')]");
 By Logo=By.xpath("//img[@class='logo']");
 By StanCatalogLink=By.xpath("(//a[@class='top-link'])[1]");
 By AllProductLink=By.xpath("(//a[@class='top-link'])[2]");
-By Resources=By.xpath("(//a[@class='top-link'])[3]");
-By SpecialOffers=By.xpath("(//a[@class='top-link'])[4]");
+By Resources=By.xpath("//a[@class='top-link'][contains(text(),'Resources')]");
+//a[@class='top-link'][contains(text(),'Resources')]
+//By Resources=By.xpath("(//a[@class='top-link'])[3]");
+By SpecialOffers=By.xpath("//a[@class='top-link'][contains(text(),'Special')]");
 By BellIcon=By.xpath("//a[@class='icon-bell']");
 By InternationalIcon=By.linkText("International");
 By CommunityIcon=By.linkText("Community");
@@ -54,6 +61,17 @@ By ShippingAddressLink=By.linkText("Shipping Addresses");
 By MyProfileLink=By.linkText("My Profile");
 By logoutLink=By.linkText("My Profile");
 
+By ShopIcon = By.xpath("(//a[text()='Shop'])[1]");
+By QuoteLink=By.xpath("//a[@class='top-link' and text()='Quotes']");
+
+public WebElement getQuoteLink()
+{
+	return driver.findElement(QuoteLink);
+}
+public WebElement getShopIcon()
+{
+	return driver.findElement(ShopIcon);
+}
 
 public WebElement getTrackBtnFF()
 {
@@ -72,6 +90,11 @@ public WebElement getCalendar()
 public WebElement getPAnalysisBtn()
 {
 	return driver.findElement(PAnalysisBtn);
+}
+
+public WebElement getTrack()
+{
+	return driver.findElement(track);
 }
 
 public WebElement getOrderBtn()
@@ -173,6 +196,7 @@ public WebElement getInternationalIcon()
 	return driver.findElement(InternationalIcon);
 	
 }
+
 
 
 public WebElement getCommunityIcon()

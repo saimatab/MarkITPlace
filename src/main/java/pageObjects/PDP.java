@@ -35,4 +35,57 @@ public class PDP {
 		return driver.findElement(CartClose);
 	}
 	
+	
+	By headlogo= By.xpath("//img[@class='logo']");
+
+
+	By favrtlink = By.xpath("//a[@id='fav_btn_10886231']");
+	By emaillink = By.xpath("//a[@class='action-icon icon-mail']");
+	By emailbox =By.xpath("//input[@name='email_addresses']");
+	By SendBtn=By.xpath("//button[@class='btn btn-primary']");
+	By emailpopup=By.xpath("//div[@class='white-popup popup-small zoom-anim-dialog mfp-show email-modal']");
+	By ShoppingCartIcon=By.xpath("//span[@alt='Shopping Cart']");
+	
+	
+	public WebElement getShoppingCartIcon()
+	{
+		return driver.findElement(ShoppingCartIcon);
+	}
+	public WebElement getheadlogo()
+	{
+		return driver.findElement(headlogo);
+	}
+	public WebElement getemailpopup()
+	{
+		return driver.findElement(emailpopup);
+	}
+	
+	public WebElement getSendBtn()
+	{
+		return driver.findElement(SendBtn);
+	}
+	public WebElement getemailbox()
+	{
+		return driver.findElement(emailbox);
+	}
+	
+	public WebElement getemaillink()
+	{
+		return driver.findElement(emaillink);
+	}
+	
+	public WebElement getfavrtlink()
+	{
+		return driver.findElement(favrtlink);
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
 }

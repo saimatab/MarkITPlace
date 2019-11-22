@@ -21,8 +21,19 @@ public class StandardsCatalog {
 	By Add2cartbtn=By.xpath("//a[@id='add_to_cart_desk_10886231']");
 	By Closeicon=By.xpath("(//button[@title='Close (Esc)'])[2]");
 	By Product2New=By.xpath("(//a[@class='image-link hitProductForDetail'])[1]");
-	
-	
+
+	By ListView=By.xpath("//a[@id='bt-products-list']");
+	By ListViewDsp=By.xpath("//a[@class='grid-control-icon icon-grid active']");
+	By GridView=By.xpath("//a[@id='bt-products-grid']");
+	By Qtybox=By.xpath("(//*[contains(@id,'product_qty_')])[1]");
+	By CartBtn=By.xpath("(//*[contains(@id,'cart_btn_')])[1]");
+	By favrtBtn=By.xpath("(//*[contains(@id,'fav_btn_')])[1]");
+	//By Add2favReg=By.xpath("");
+	By tablet=By.xpath("//a[text()='TABLETS']");
+	public List<WebElement> getListViewDspCount()
+	{
+		return driver.findElements(ListViewDsp);
+	}
 	public WebElement getProduct2New()
 	{
 		return driver.findElement(Product2New);
@@ -59,4 +70,43 @@ public class StandardsCatalog {
 		return driver.findElements(Product1New);
 	}
 
+	public WebElement gettablet()
+	{
+		return driver.findElement(tablet);
+	}
+	
+	
+	public WebElement getfavrtBtn()
+	{
+		return driver.findElement(favrtBtn);
+	}
+	
+	
+	public WebElement getCartBtn()
+	{
+		return driver.findElement(CartBtn);
+	}
+	
+	
+	
+	public WebElement getQtybox()
+	{
+		return driver.findElement(Qtybox);
+	}
+	
+	
+	public WebElement getGridView()
+	{
+		return driver.findElement(GridView);
+	}
+	
+	public WebElement getListView()
+	{
+		return driver.findElement(ListView);
+	}
+	
+
+	
+
 }
+

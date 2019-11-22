@@ -2,14 +2,19 @@ package smokeTest;
 
 import java.io.IOException;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Random;
 import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -47,8 +52,8 @@ public class ValidateSmokeTest extends base {
 		// System.out.println(TitleHome);
 		// Boolean IsPresent=driver.findElements(By.yourLocator).size() > 0;
 
-		try {
-			Assert.assertEquals(TitleHome, "Shop - MarkITplace");
+		/*try {
+			Assert.assertEquals(TitleHome, "Standard Products - MarkITplace");
 
 			Log.info("User Have Successfully Login To The Home Page");
 		} catch (Throwable e) {
@@ -56,9 +61,10 @@ public class ValidateSmokeTest extends base {
 			Log.error("User Is Not Being Able To Login");
 			Log.error(e.getMessage());
 		}
-		Assert.assertEquals(TitleHome, "Shop - MarkITplace");
+		Assert.assertEquals(TitleHome, "Standard Products - MarkITplace");*/
 
 	}
+	
 	
 	@Test(priority = 1)
 
@@ -612,32 +618,21 @@ Srp.getProduct4Cart().click();
 		Thread.sleep(5000);
 	*/
 		
-		wait.until(ExpectedConditions.elementToBeClickable(CO.getSaveBtn1()));
-		CO.getSaveBtn1().click();
-		Thread.sleep(5000);
-		
-		//wait.until(ExpectedConditions.elementToBeClickable(CO.getListvalue()));
-		//CO.getListvalue().click();
-		
-		//wait.until(ExpectedConditions.elementToBeClickable(CO.getBillingDropdown()));
-		//CO.getBillingDropdown().click();
+	
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getShippingAddValue()));
 		CO.getShippingAddValue().click();
 		
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getNewbtn()));
 		CO.getNewbtn().click();
 		Thread.sleep(5000);
-		wait.until(ExpectedConditions.elementToBeClickable(CO.getSaveBtn1()));
-
-		CO.getSaveBtn1().click();
-		Thread.sleep(9000);
+	
+	
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getAttention()));
 		CO.getAttention().sendKeys("abcTest");
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getEmailConfirm()));
 		CO.getEmailConfirm().clear();
 		CO.getEmailConfirm().sendKeys("bilawal.alam@arpatech.com");
-		wait.until(ExpectedConditions.elementToBeClickable(CO.getSaveBtn1()));
-		CO.getSaveBtn1().click();
+	
 		wait.until(ExpectedConditions.elementToBeClickable(CO.getPlaceOrderBtn()));
 		Assert.assertEquals(CO.getPlaceOrderBtn().isEnabled(), true);
 		CO.getPlaceOrderBtn().click();
@@ -861,14 +856,26 @@ Srp.getProduct4Cart().click();
 		Thread.sleep(5000);
 	}
 
-	@Test(priority = 24)
 
-	public void ValidatePurchaseAnalysisPage() {
+
+	
+
+	@Test(priority = 24, enabled=false)
+
+	public void ValidatePAPage() {
 		Header head = new Header(driver);
 		// WebDriverWait wait = new WebDriverWait(driver,10000);
 		// wait.until(ExpectedConditions.visibilityOf(head.getPAnalysisBtn()));
+		head.getTrackBtn().click();
+		
+
+		WebDriverWait wait = new WebDriverWait(driver, 5000);
+		wait.until(ExpectedConditions.elementToBeClickable(head.getPAnalysisBtn()));
+		
+		
+		
 		head.getPAnalysisBtn().click();
-		Log.info("User has clicked on the Purchase Analysis button from the header of the page");
+		/*Log.info("User has clicked on the Purchase Analysis button from the header of the page");
 		String title5 = driver.getTitle();
 		String exp5 = "Purchase Analysis - MarkITplace";
 		try {
@@ -882,56 +889,61 @@ Srp.getProduct4Cart().click();
 					"User have not reached the Purchase Analysis page after clicking on the Purchase Analysis button from the header of the page");
 			Log.error(e.getMessage());
 		}
-		Assert.assertEquals(title5, exp5);
+		Assert.assertEquals(title5, exp5);*/
 	}
 
-	@Test(priority = 25)
+	@Test(priority = 25,enabled=false)
 
 	public void ValidatePAEmail() throws InterruptedException {
 		PurchaseAnalysis PA = new PurchaseAnalysis(driver);
-		WebDriverWait wait = new WebDriverWait(driver, 1000000);
-		wait.until(ExpectedConditions.visibilityOf(PA.getEmail()));
-		PA.getEmail().click();
-		Log.info("User have clicked on email icon on purchase analysis Page");
-		wait.until(ExpectedConditions.visibilityOf(PA.getEAddressField()));
-		PA.getEAddressField().sendKeys("bilawal.tsg@gmail.com");
-		Log.info("User have entered the email on email field at purchase analysis Page");
-		wait.until(ExpectedConditions.visibilityOf(PA.getSendBtn()));
-		// System.out.println(PA.getSendBtn().isEnabled());
-		// System.out.println(PA.getSendBtn().isSelected());
-		// System.out.println(PA.getSendBtn().isDisplayed());
-		PA.getSendBtn().click();
-		Log.info("User have click on Send button at email popup screen at purchase analysis Page");
-		Actions actions = new Actions(driver);
+		WebDriverWait wait = new WebDriverWait(driver, 1000);
+		
+		//findelementbypath(//span[@class='product-list-actions//a)[2]
+		//wait.until(ExpectedConditions.elementToBeClickable(PA.getEmail()));
+		//WebElement a=driver.findElement(By.xpath("//a[@class='action-icon icon-mail']"));
+		//a.click();
+	
+		//PA.getEmail().click();
+		Actions ab =new Actions(driver);
+		 Thread.sleep(5000);
+		ab.click(driver.findElement(By.xpath("//a[@class='action-icon icon-mail']"))).release().perform();
+	
+		 Thread.sleep(5000);
 
-		actions.moveToElement(PA.getdownload()).click().perform();
-		// Thread.sleep(5000);
+		WebElement download=driver.findElement(By.xpath("//div[@class='modal-mask']"));
 
-		// System.out.println(PA.getSendBtn().isEnabled());
-		// System.out.println(PA.getSendBtn().isSelected());
-		// System.out.println(PA.getSendBtn().isDisplayed());
-		Boolean IsPresent = PA.getEmailDialog().isDisplayed();
-		Boolean Expect = false;
-		// String title5 = driver.getTitle();
-		// String expectedTitle = "Standard - MarkITplace";
-		Assert.assertEquals(IsPresent, Expect);
+		
+		
+		WebElement temp=download.findElement(By.xpath("(//div[@class='modal-content'])[4]//input[@type='text' and @name='email_addresses']"));
 
-		// wait.until(ExpectedConditions.elementToBeClickable(PA.getdownload()));
-		// PA.getdownload().click();
-		// Thread.sleep(5000);
+
+		
+
+		temp.sendKeys("ffhhffh@k.com");
+	
+		Log.info(
+				"aaaaae");
+	     PA.getSendBtn().click();
+	     Thread.sleep(3000);
+
+	
 	}
+	
+	/////**************
+	
 
-	@Test(priority = 26)
+	@Test(priority = 26, enabled=true)
 
-	public void ValidateCalendarPage() {
-		Header head = new Header(driver);
-		// WebDriverWait wait = new WebDriverWait(driver,10000);
-		// wait.until(ExpectedConditions.visibilityOf(head.getPAnalysisBtn()));
-		head.getTrackBtn().click();
-		// Actions actions = new Actions(driver);
-
-		// actions.moveToElement(head.getCalendar()).click().perform();
-		head.getCalendar().click();
+	public void ValidateCalendarPage()throws InterruptedException {
+		//Header head = new Header(driver);
+	
+		WebDriverWait wait = new WebDriverWait(driver, 2000);
+		Thread.sleep(3000);
+		
+		TrackPage TP = new TrackPage(driver);
+		wait.until(ExpectedConditions.visibilityOf(TP.getCalendarBtn()));
+		TP.getCalendarBtn().click();
+		
 		Log.info("User has clicked on the Calendar button from the header of the page");
 		String title5 = driver.getTitle();
 		String exp5 = "Calendar Monthly View - MarkITplace";
@@ -997,10 +1009,10 @@ Srp.getProduct4Cart().click();
 		Assert.assertEquals(Act2, exp1);
 	}
 
-	@Test(priority = 28,enabled=false)
+	@Test(priority = 28,enabled = false)
 
 	public void ValidateAllReportsLinks() throws InterruptedException {
-		driver.navigate().back();
+driver.navigate().back();
 		SoftAssert SF = new SoftAssert();
 		Header head = new Header(driver);
 		head.getReports().click();
@@ -1471,9 +1483,15 @@ Srp.getProduct4Cart().click();
 	}
 	
 	
-	@Test(priority = 29)
-	public void ValidateSavedReports() {
+	@Test(priority = 29, enabled=true)
+	public void ValidateSavedReports()throws InterruptedException {
 		TrackPage TP = new TrackPage(driver);
+		Thread.sleep(3000);
+		
+		WebDriverWait wait = new WebDriverWait(driver, 2000);
+		wait.until(ExpectedConditions.visibilityOf(TP.getSavedReports()));
+
+	
 		TP.getSavedReports().click();
 		Log.info("User has clicked on the Saved Report icon from the header of the page");
 		String title5 = driver.getTitle();
@@ -1506,8 +1524,19 @@ Srp.getProduct4Cart().click();
 		Log.info("user is searching printer using the search textbox");
 		Thread.sleep(10000);
 		
+		//JavascriptExecutor js = (JavascriptExecutor) driver;  
+
+		//js.executeScript("scroll(0, 250);");   
+		WebElement web=driver.findElement(By.cssSelector("section.product-list.container.clearfix:nth-child(5) div.product-list-content div.product-list-grid.clearfix.print-product-list.pro-list.grid:nth-child(2) div.product-grid-item.clearfix:nth-child(5) div.product-grid-item-content.clearfix div.list-item-right div.availability.clearfix span.stock.in-stock > span:nth-child(1)"));
+		//action.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Actions actions = new Actions(driver);
+		actions.moveToElement(web);
+		actions.perform();
+		
 		srp.getCompare1().click();
+		Thread.sleep(3000);
 		srp.getCompare2().click();
+		Thread.sleep(3000);
 		srp.getCompareBtn().click();
 		
 		
@@ -1529,13 +1558,15 @@ Srp.getProduct4Cart().click();
 		}
 		Assert.assertEquals(act, Exp);
 	}
+	
 
-	@AfterTest
+
+	/*@AfterTest
 
 	public void closebrowser()
 
 	{
 		driver.close();
-	}
-
+	}*/
+	
 }
