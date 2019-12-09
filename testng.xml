@@ -7,7 +7,7 @@
 </listeners>
   <test name="ValidateSmokeTests">
 <classes>
-      <class name="smokeTest.MainTestCaseFile"/>
+      <class name="tests.OldSmokeTests"/>
 
     </classes>
  
